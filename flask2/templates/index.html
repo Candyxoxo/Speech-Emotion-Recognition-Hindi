@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Speech Emotion Recognition</title>
+
+    <link href="static\vendor\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="static\assets\css\fontawesome.css">
+    <link rel="stylesheet" href="static\assets\css\template.css">
+    <link rel="stylesheet" href="static\assets\css\animated.css">
+    <link rel="stylesheet" href="static\assets\css\owl.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  </head>
+
+<body>
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <a href="index.html" class="logo">
+              <h4>Swar<span>Bhaav</span></h4>
+            </a>
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#services">Analysis</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Features</a></li>
+              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <h6>Welcome to Swar Bhaav</h6>
+                <h2>We Make <em>Emotions</em> <span>Speak</span> </h2>
+                <p>SwarBhaav enhances communication by recognizing and analyzing emotions in Hindi conversations, bringing empathy to every interaction.</p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="static\assets\images\right-banner.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="services" class="our-services section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="left-image">
+            <img src="static\assets\images\ppl.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="section-heading">
+            <h2>Record or upload your audio to <em>explore your emotions</em>  &amp; <span>gain valuable insights</span> into the emotions conveyed in your voice</h2>
+            <br>
+            
+            <div class="container">
+              <form action="/predict" method="post" enctype="multipart/form-data">
+              <div id="controls">
+                  <button id="start-record" class="icon-button red"><i class="fas fa-microphone"> </i></button>
+                  <button id="stop-record" class="icon-button red" disabled><i class="fas fa-stop"></i></button>
+                  <button id="record-again" class="icon-button red" disabled><i class="fas fa-trash"></i></button>
+              </div>
+      
+              <div class="upload-container">
+                  <input type="file" id="upload" accept=".wav" />
+                  <label for="upload" class="upload-label">Upload .wav File</label>
+              </div>
+      
+              <div id="audio-container">
+                  <audio id="audio-playback" controls></audio>
+              </div>
+      
+              <button id="submit" type="submit" class="submit-button" disabled>Submit</button>
+            </form>
+
+            <div id="result"></div>
+          </div>
+          <script src="static\assets\js\script.js"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="portfolio" class="our-portfolio section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading  wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <h2>Why Choose <em>Swar</em><span>Bhaav</span>?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+              <div class="hidden-content">
+                <h4>Real-Time Emotion Detection</h4>
+                <p>Instantly identifies emotions like happiness, sadness, anger, etc. from Hindi speech in real-time.</p>
+              </div>
+              <div class="showed-content">
+                <img src="static\assets\images\realtime.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+              <div class="hidden-content">
+                <h4>Multi-Emotion Analysis</h4>
+                <p>Detects multiple emotions in speech for a comprehensive emotional profile.</p>
+              </div>
+              <div class="showed-content">
+                <img src="static\assets\images\multiemo.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+              <div class="hidden-content">
+                <h4>User-Friendly Interface</h4>
+                <p>Easy-to-use interface designed for a seamless experience, even for non-technical users.</p>
+              </div>
+              <div class="showed-content">
+                <img src="static\assets\images\userfriendly.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <a href="#">
+            <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+              <div class="hidden-content">
+                <h4>Audio File Support</h4>
+                <p>Supports emotion analysis from pre-recorded audio files, making it versatile for various use cases.</p>
+              </div>
+              <div class="showed-content">
+                <img src="static\assets\images\audsupp.png" alt="">
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="static\assets\images\about-left-image.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <div class="icon-circle">
+                      <i class="fa fa-stethoscope"></i>
+                    </div>                    
+                  </div>
+                  <div class="right-text">
+                    <h4>Healthcare</h4>
+                    <p>Speech analysis aids in diagnosing and amangaing mental health conditions.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <div class="icon-circle">
+                      <i class="fas fa-lock"></i>
+                    </div>                    
+                  </div>
+                  <div class="right-text">
+                    <h4>Safety and Security</h4>
+                    <p>Detecting distress in emergency calls to prioritize responses.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <div class="icon-circle">
+                      <i class="fas fa-ad"></i>
+                    </div>                    
+                  </div>
+                  <div class="right-text">
+                    <h4>Marketing and Advertising</h4>
+                    <p>Refining marketing strategies by analyzing consumer emotions towards ads.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <div class="icon-circle">
+                      <i class="fa-solid fa-user-graduate"></i>
+                    </div>                    
+                  </div>
+                  <div class="right-text">
+                    <h4>Education</h4>
+                    <p>Enhancing online learning by understanding students' emotions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>Made by Gauri Gandhi, Shreya Poojary, Hetal Mahajan & Omkar Yadav <br>Students AI-ML Department</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="static\vendor\jquery\jquery.min.js"></script>
+  <script src="static\vendor\bootstrap\js\bootstrap.bundle.min.js"></script>
+  <script src="static\assets\js\owl-carousel.js"></script>
+  <script src="static\assets\js\animation.js"></script>
+  <script src="static\assets\js\imagesloaded.js"></script>
+  <script src="static\assets\js\templatemo-custom.js"></script>
+
+</body>
+</html>
