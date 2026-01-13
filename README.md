@@ -1,4 +1,4 @@
-# 🎙️ Hindi Speech Emotion Recognition Web Application
+# 🎙️ Speech Emotion Recognition in Hindi
 
 ## 📌 Overview
 
